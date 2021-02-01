@@ -32,3 +32,21 @@ line 204 -260 begins adding in STATE
 
 the state is like a tiny database inside of each component, which can hold and update info
 as the method instructs  
+
+
+
+PROPS
+begins header.js line 273
+added fake database to use in application, db.json in style tab (src/style)
+import json file into index.js
+then in order to have the different objects within json file added to news section, go into news_list.js
+import news_list.js into index.js (also export from within news_list.js) 
+using a map to loop through an array of objects. 
+
+
+PROPS part 2:
+uses news_list_item.js and renders props.item from this file to news_list.js file;
+
+
+
+
