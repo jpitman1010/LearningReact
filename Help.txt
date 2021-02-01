@@ -1,0 +1,18 @@
+npm start     starts the app in react so that you can run on localhost:3000
+    -make sure you are inside of the directory that has the files, not a parent directory, when using this prompt
+
+
+for each file, you MUST::
+     export default (filename);
+and then in the index file:
+    import (the function name (i.e. Header)) from (the location the file is found(i.e. './components/header'));
+
+
+refer to header file for an idea of dynamic content: date in header updating each time run...  
+can also return math operations (but can only return 1 thing per file imported/exported)
+
+
+
+
+can use google font to find font styles
+    -when labeling div(or other tag) with class, use className="" not class=""
