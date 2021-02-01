@@ -49,4 +49,7 @@ uses news_list_item.js and renders props.item from this file to news_list.js fil
 
 
 
+PROPS 3: props passed from a class component to a class
+footer.js added and index.js updated
 
+REACT Children: updating index.js NewsList tag ...
