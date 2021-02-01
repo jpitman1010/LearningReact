@@ -77,24 +77,76 @@
 // instead of using React versoin of css, can create css file like normal and just add stylings through there:
 
 
+// import React, { Component } from 'react';
+
+// // classes are not functions, so they do not need  = () =>
+// // in order to extend React components, must add verbiage below.
+// class Header extends Component {
+    
+
+//     inputChangeHandler() {
+//         //another method (like render), then add onChange handler in the return and call this.functionName
+//         console.log("Someone Typed Something")
+//     }
+//     // in order to have a method within the class
+//     // you must use render() {method(just like in python is a function 
+//     // that lives within a class)}
+    
+//     render() {
+    
+//     return (
+//         <header
+//             // onClick={()=> console.log("I was clicked") }
+//             //this will have console show each time the logo is clicked
+//         >
+//             <div className="logo">
+//                 Logo
+//             </div>
+//             <input
+//                 onChange={this.inputChangeHandler}
+//             />
+//         </header>
+//     )
+// }
+
+// }
+
+
+
+
+// export default Header;
+
+
+
+
 import React, { Component } from 'react';
 
 // classes are not functions, so they do not need  = () =>
 // in order to extend React components, must add verbiage below.
 class Header extends Component {
     
-    // in order to have a method within the class
-    // you must use render() {method(just like in python is a function 
-    // that lives within a class)}
+
+    inputChangeHandler(event,name) {
+        console.log(event.target.value)
+        console.log(name)
+    }
+    //passing through event will allow for you to capture the target value (what is typed into input)
+    //to pass through two things through method, use , after event and then below in return, add (e) => before this.inputChangeHandler(e,'name-anyString')
+    //this will console log both the event and the name being passed through the method
     
     render() {
     
     return (
-        <header>
+        <header
+            // onClick={()=> console.log("I was clicked") }
+            //this will have console show each time the logo is clicked
+        >
             <div className="logo">
                 Logo
             </div>
-            <input/>
+            <input
+                onChange={ (e) => this.inputChangeHandler(e,'nameOfAnystring')}
+            />
         </header>
     )
 }
