@@ -16,3 +16,19 @@ can also return math operations (but can only return 1 thing per file imported/e
 
 can use google font to find font styles
     -when labeling div(or other tag) with class, use className="" not class=""
+
+
+handling REACT Events (like form inputs) uses SyntheticEvent which is already built in React 
+(scroll down to get all the diff events it supports); docs ref:
+        https://reactjs.org/docs/events.html    
+        examples lines 80 through 162 in header.js
+
+
+
+STATE
+fat arrow functions (=>) will take the "this" and change it from pointing to the method
+to where it points to the entire class.   check out starting at line 162 in header.js
+line 204 -260 begins adding in STATE
+
+the state is like a tiny database inside of each component, which can hold and update info
+as the method instructs  
